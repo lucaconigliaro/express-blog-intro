@@ -10,6 +10,15 @@ app.get(`/`, (req, res) => {
     })
 });
 
+// Creiamo poi una rotta `/bacheca` che restituisca un oggetto json con la lista dei post e il conteggio, partendo da un array.
+app.get(`/bacheca`, (req, res) => {
+    const result = {
+        dolci: posts, 
+        totale: posts.length
+    }
+    res.json(result);
+})
+
 // Avviamo il server sull'indirizzo localhost alla porta specificata (3001).
 app.listen(port, () => {
     console.log("Server is listenin")
