@@ -1,4 +1,5 @@
 const express = require(`express`); // Importiamo il modulo `express` per creare un'applicazione web.
+const posts = require("./data"); // Importiamo il file `data.js` che contiene i post.
 const app = express(); // Creiamo un'applicazione Express.
 const port = 3001; // Definiamo la porta su cui il server ascolterà (3001).
 
